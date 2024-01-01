@@ -42,7 +42,7 @@ blockquote, q {
 }
 
 /* responsive max-width for nav */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) and (max-width:1920px) {
   .nav__wrapper {
     max-width: 64rem;
     margin: 0 auto;
@@ -83,7 +83,7 @@ blockquote, q {
   width: 100%;
 }
 
-/* navigation list styles */
+/* navigation styles */
 .nav__list {
   list-style-type: none;
   display: flex;
@@ -144,14 +144,14 @@ blockquote, q {
 }
 
 @media screen and (min-width: 768px) {
-  /* styles for ipads */
+  /* styles for tablets */
   .wrapper, .hero__wrapper, .description__wrapper, .about__wrapper, .photo-gallery__wrapper, .footer__wrapper {
     margin: 0 2.25rem;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  /* styles for computers */
+@media screen and (min-width: 1280px) and (max-width:1920px) {
+  /* styles for desktop */
   .wrapper, .hero__wrapper, .description__wrapper, .about__wrapper, .photo-gallery__wrapper, .footer__wrapper {
     max-width: 64rem;
     margin: 0 auto;
@@ -183,7 +183,7 @@ blockquote, q {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) and (max-width:1920px) {
   .hero {
     height: 60vh;
   }
@@ -260,7 +260,7 @@ h3 {
   }
 }
 
-/* p (paragraph) styles */
+/* p (¶) styles */
 p {
   font-size: 0.8125rem;
   line-height: 1.125rem;
@@ -298,7 +298,7 @@ p {
   flex-direction: column;
 }
 
-/* responsive adjustment for footer title */
+/* responsiveness for footer title */
 @media screen and (min-width: 768px) {
   .footer__title {
     flex-direction: row;
@@ -306,12 +306,12 @@ p {
   }
 }
 
-/* logo visibility on small screens */
+/* logo visibility on mobile screens */
 .footer__title .logo {
   display: none;
 }
 
-/* logo alignment on larger screens */
+/* logo alignment on tablet screens */
 @media screen and (min-width: 768px) {
   .footer__title .logo {
     display: flex;
@@ -335,8 +335,8 @@ p {
   }
 }
 
-/* move social media icons left desktop */
-@media screen and (min-width: 1280px) {
+/*  social media icons position desktop */
+@media screen and (min-width: 1280px) and (max-width:1920px)  {
   .footer__img-container .social-icon {
     margin-right: 2rem;
   }
@@ -384,6 +384,42 @@ p {
     padding: 0 3rem;
   }
 }
+
+/* about section padding */
+@media screen and (min-width: 768px) {
+  .about__wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  .about__container {
+    padding: 0 3rem;
+  }
+}
+
+/* description section padding */
+@media screen and (min-width: 768px) {
+  .description__wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+}
+
+/* photo gallery */
+.photo-gallery {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+/* footer styles */
+.footer {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 
 /* about section quote by */
 .about .quote__by {
