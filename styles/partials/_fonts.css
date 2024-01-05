@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Avenir Next Pro';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Avenir Next Pro Lt'), local('AvenirNextPro-Light'),
+         url('../../assets/font/avenirnextltpro-light.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/font/avenirnextltpro-light.woff2') format('woff2'),
+         url('../../assets/font/avenirnextltpro-light.woff') format('woff'),
+         url('../../assets/font/avenirnextltpro-light.ttf') format('truetype');
+}
