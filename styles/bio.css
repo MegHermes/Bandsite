@@ -1,7 +1,7 @@
 /* Originally used web fonts due to error messages for all 3 otf files: "not allowed to load local resource: file:///users/meg/desktop/brainstation/projects/megane-hermes-bandsite/styles/assets/font/avenirnextltpro-regular.otf" */
 
 body {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Avenir Next Pro Lt', sans-serif;
   line-height: 1;
 }
 
@@ -47,6 +47,11 @@ blockquote, q {
     max-width: 64rem;
     margin: 0 auto;
   }
+}
+
+.about .section-header,
+.photo-gallery .section-header {
+  color: #323232;
 }
 
 /* nav background and padding */
