@@ -1,3 +1,8 @@
+@mixin responsive($breakpoint) {
+  @media screen and (#{$breakpoint}) {
+    @content;
+  }
+}
 @import 'fonts';
 
 $color_1: #e1e1e1;

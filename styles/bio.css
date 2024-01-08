@@ -131,6 +131,14 @@ q {
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 2560px) {
+  .photo-gallery__wrapper,
+  .about__wrapper {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+}
+
 .photo-gallery__img-container {
   padding-bottom: 1rem;
   display: flex;
@@ -152,26 +160,6 @@ q {
 
 .form {
   padding-bottom: 1rem;
-}
-
-.footer__copyright {
-  padding-bottom: 1rem;
-}
-
-.footer__logo {
-  padding-bottom: 1rem;
-  width: 9.75rem;
-  margin-left: auto;
-  margin-left: 0;
-}
-
-.footer__img-container {
-  padding-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  width: 8.5rem;
-  justify-content: space-between;
-  gap: 2rem;
 }
 
 h3 {
@@ -372,20 +360,14 @@ p {
     width: 24%;
     justify-content: left;
     gap: 2rem;
-    padding-left: 3.3rem;
+    padding-left: 7.5rem;
   }
   h3 {
     padding-bottom: 1.5rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  h2 {
-    font-weight: 600;
-    line-height: 2.75rem;
-    font-size: 2.25rem;
-    padding-top: 3rem;
-    padding-bottom: 2.25rem;
-  }
+
   h1 {
     font-size: 3.75rem;
     line-height: 4.25rem;
@@ -442,12 +424,7 @@ p {
     max-width: 64rem;
     margin: 0 auto;
   }
-  .footer__wrapper {
-    max-width: 64rem;
-    margin: 0 auto;
-    max-width: 64rem;
-    margin: 0 auto;
-  }
+ 
   .hero {
     height: 60vh;
   }
@@ -461,4 +438,398 @@ p {
   }
 }
 
-/*# sourceMappingURL=bio.css.map */
+.footer__wrapper {
+  max-width: 64rem;
+  margin: 0 auto;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  padding-bottom: 1rem;
+}
+
+.footer__logo {
+  padding-bottom: 1rem;
+  width: 9.75rem;
+  margin-left: auto;
+  margin-left: 0;
+}
+
+.footer__img-container {
+  padding-bottom: 0rem;
+  padding-top: .75rem;
+  display: flex;
+  flex-direction: row;
+  width: 8.5rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.comments {
+  background-color: #fafafa;
+  padding: 0rem;
+  font-family: "Avenir Next", sans-serif;
+  color: #323232;
+  line-height: 1.125rem;
+  font-size: 0.8125rem;
+  margin-bottom: 2.5rem;
+}
+
+.comments__title {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 1.5rem;
+  color: #323232;
+  line-height: 2.75rem;
+  padding: 0rem 0rem 0 1rem;
+}
+
+.comments__input {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem 0 0 0;
+}
+
+.comments__input-photo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.comments__input-info-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 1rem;
+  width: 14rem;
+}
+
+.comments__form-name,
+.comments__form-comment {
+  height: 2.5rem;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-radius: 0.25rem;
+  border: 1.5px solid #e1e1e1;
+  padding: 0.625rem;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  margin-bottom: 1.5rem;
+  resize: none;
+}
+
+.comments__form-comment {
+  height: 6rem;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-radius: 0.25rem;
+  border: 1.5px solid #e1e1e1;
+  padding: 0.625rem;
+  padding-bottom: 3rem;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  margin-bottom: 1.5rem;
+  resize: none;
+}
+
+.comments__form-name:focus,
+.comments__form-comment:focus {
+  border: 1.5px solid #323232;
+  outline-width: 0;
+}
+
+.comments__form-submit {
+  background-color: #323232;
+  color: #ffffff;
+  font-family: "Avenir Next", sans-serif;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.8125rem;
+  margin-left: auto; /* Add this line to move the button to the right */
+}
+
+@media screen and (min-width: 768px) {
+  .comments__form-submit {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__form-submit {
+    width: 33%;
+  }
+}
+
+.comments__form-submit:focus {
+  outline-width: 0;
+}
+
+.comments__form-submit:hover {
+  background-color: black;
+}
+
+.comments__new {
+  width: 100%;
+  color: #323232;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0;
+}
+
+.comments__new-image {
+  width: 3rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  display: flex;
+  margin-left: 0.5rem;
+  margin-bottom: 5rem; 
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__new-image {
+    width: 3rem;
+    height: 2.8rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin-bottom: 5rem; /* Adjust margin-bottom for consistency */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__new-image {
+    width: 3rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin-bottom: 5rem; /* Adjust margin-bottom for consistency */
+  }
+}
+
+
+.comments__new-name {
+  font-size: 0.875rem;
+  padding-right: 1rem;
+  width: auto;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  margin: 0;
+}
+
+.comments__new-time {
+  font-family: "Avenir Next", sans-serif;
+  color: #afafaf;
+  margin-left: auto;
+  align-self: flex-end;
+  padding-bottom: 0.4rem;
+  margin-right: .5rem;
+}
+
+.comments__new-comment {
+  font-family: "Avenir Next", sans-serif;
+  width: 100%; 
+  margin: 0; 
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.comments__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%; 
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments__title {
+    line-height: 2.75rem;
+    padding: 3rem 0 3.5rem 2rem;
+  }
+
+  .comments__input {
+    justify-content: center;
+    width: 33rem;
+    margin: 0 auto;
+  }
+  .comments__input-photo {
+    margin-right: 1.25rem;
+  }
+  .comments__input-info-form {
+    width: 28.75rem;
+  }
+  .comments__input-info-form-submit {
+    width: 10rem;
+    align-self: flex-end;
+  }
+  .comments__new {
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 33rem;
+  }
+  .comments__new-name {
+    margin: 0;
+    padding-right: 1rem;
+    width: unset;
+  }
+  .comments__new-comment {
+    width: 25rem;
+  }
+  .comments__container {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .comments__title {
+    padding-left: 13.5rem;
+    margin-left: rem;
+  }
+}
+
+
+
+
+.footer h2 {
+padding-bottom: 0rem;
+}
+
+.footer {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 0 1rem;
+  font-family: 'avenir-regular';
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+.footer__title {
+  font-family: 'avenir-bold';
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0rem 0 1.5rem 0;
+}
+
+.footer__social {
+  padding-bottom: 2rem;
+}
+
+.footer__social-link {
+  margin-right: 1.6rem;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__contact-name {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding-bottom: 1.25rem;
+}
+
+.footer__contact-location, .footer__contact-link {
+  color: #AFAFAF;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+
+.footer__copyright {
+  color: #AFAFAF;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 0 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .footer__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding: 3rem 0 3.5rem 0;
+  }
+  .footer__social {
+    padding: 0 8rem 0 0;
+  }
+  .footer__social-link {
+    margin-right: 2rem;
+  }
+  .footer__logo {
+    display: inherit;
+    height: 1.5rem;
+    width: 7.5rem;
+  }
+  .footer__contact {
+    padding-right: 1.875rem;
+  }
+  .footer__contact-name {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer__contact-location {
+    padding-bottom: 0.25rem;
+  }
+  .footer__contact-link {
+    margin-bottom: 2.5rem;
+  }
+  .footer__contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Add wrap property to allow multiple rows */
+    justify-content: space-between;
+  }
+  
+  .footer__contact {
+    width: 100%; /* Each contact column takes full width initially */
+    max-width: 300px; /* Adjust the maximum width as needed */
+    box-sizing: border-box;
+    padding-right: 1.875rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer__contact {
+      width: calc(33.333% - 1.875rem); /* Adjust the width for three columns with some spacing */
+      max-width: none; /* Reset max-width for larger screens */
+    }
+  }
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding: 0 11.25rem;
+  }
+  .footer__social {
+    padding-right: 30rem;
+  }
+  .footer__contact {
+    padding-right: 3.25rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
